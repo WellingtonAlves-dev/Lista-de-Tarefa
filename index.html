@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas | Projeto Javascript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+
+span {
+  animation-duration: 0.5s;
+  animation-name: slideUP;
+}
+
+@keyframes slideUP {
+  from {
+    margin-left: -10%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+    </style>
+</head>
+<body>
+    
+    <div class='container'>
+        <div class='table table-bordered mt-5 p-2'>
+                <tr class='bg-light'>
+                    <th>Lista Tarefas</th>
+                    <th><input type='text' class='form-control my-2' placeholder="Tarefa" name='tarefa'></th>
+                    <td><th><input type='button' id="btn" class='btn btn-primary mb-2' value="Cadastrar"></th>
+                        <th><input type='button' id="btn_limpar" class='btn btn-danger mb-2' value="Limpar"></th>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="table table-striped table-hover">
+                            <tbody id="lista">
+                            </tbody>
+                          </table>
+                    </td>
+                </tr>
+        </div>
+    </div>
+
+<script src='js/script.js'></script>
+</body>
+</html>
